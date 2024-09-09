@@ -16,9 +16,9 @@ const City = () => {
   if (isLoading) return <div> ...Loading </div>;
 
   return (
-    <div className="max-w-screen-xl bg-blue-400 mx-auto px-5 py-3 rounded-3xl flex flex-col gap-8">
+    <div className="max-w-screen-xl bg-[#F5F6FE] mx-auto px-5 py-3 rounded-3xl flex flex-col gap-8">
       <Header cityName={cityName} />
-      <Body />
+      <Body cityName={cityName} cityData={weatherData} />
     </div>
   );
 };

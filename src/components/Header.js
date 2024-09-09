@@ -43,16 +43,18 @@ const Header = (props) => {
         <input className="w-full" placeholder={`Search City`} />
       </div>
       <div className="flex px-3 items-center h-full bg-white gap-2 rounded-3xl ">
-        <details className="dropdown">
+        <details className="dropdown bg">
           <summary className="m-1">{cityName}</summary>
           <ul
             onClick={chooseCity}
-            className="menu dropdown-content rounded-box z-[1] w-52 p-2 "
+            className="menu dropdown-content rounded-box z-[1] w-52 p-2 bg-white"
           >
             {cities.map((city) => {
               return (
                 <Link href={`/weather/${city}`}>
-                  <li className="mb-4"> {city} </li>;
+                  <p className="mb-4 border border-solid border-slate-400	">
+                    {city}
+                  </p>
                 </Link>
               );
             })}
