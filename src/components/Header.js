@@ -75,21 +75,6 @@ const Header = (props) => {
             />
           </div>
         </div>
-        <div className="flex flex-col bg-white overflow-y-scroll">
-          {/* <summary className="m-1"></summary> */}
-          <ul
-            // onClick={chooseCity}
-            className="menu dropdown-content rounded-box z-[1] w-52 p-2 bg-white"
-          >
-            {searchedCities.map((searchedCity) => {
-              return (
-                <Link href={searchedCity}>
-                  <button className=" mb-4">{searchedCity}</button>
-                </Link>
-              );
-            })}
-          </ul>
-        </div>
       </div>
 
       <div className="flex px-3 items-center h-full bg-white gap-2 rounded-3xl ">
